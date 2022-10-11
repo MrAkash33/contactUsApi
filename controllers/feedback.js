@@ -2,7 +2,7 @@ const { customerModal } = require("../modal/contact")
 var nodemailer = require('nodemailer');
 
 const feedBack = async (req,res,next) => {
-    console.log(process.env.PASSWORD,"envfile);
+    console.log(process.env.PASSWORD,"envfile");
     console.log(req.body);
     const data = req.body
     let user = new customerModal ({
