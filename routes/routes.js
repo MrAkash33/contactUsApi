@@ -4,6 +4,6 @@ const { feedBack,GetDetails } = require('../controllers/feedback')
 const router = express.Router()
 
 router.post("/feedback",feedBack)
-router.post("/getdetails",GetDetails)
+router.get("/getdetails",GetDetails)
 
 module.exports = router
