@@ -48,7 +48,13 @@ const feedBack = async (req,res,next) => {
       });
       res.json(savedData)
 }
+const getdetails = async (req,res) => {
+    console.log("message called");
+    const message = "Api Called";
+    res.json(message)
+}
 
 module.exports = {
-    feedBack
+    feedBack,
+    getdetails
 }
